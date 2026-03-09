@@ -47,24 +47,12 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', zIndex: 60 }}>
-                    <div style={{
-                        width: '36px', height: '36px',
-                        background: 'var(--color-green)',
-                        borderRadius: '10px',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        color: 'white'
-                    }}>
-                        <MessageCircle size={20} weight="fill" />
-                    </div>
-                    <span style={{
-                        fontFamily: 'var(--font-display)',
-                        fontWeight: 800,
-                        fontSize: '1.25rem',
-                        color: 'var(--color-ink)',
-                        letterSpacing: '-0.02em'
-                    }}>
-                        WA<span style={{ color: 'var(--color-green-dark)' }}>Africa</span>
-                    </span>
+                    <img
+                        src="/waafrica_logo_transparent.png"
+                        alt="WhatsAppAutomation.africa Logo"
+                        className="nav-logo"
+                        style={{ width: 'auto', objectFit: 'contain' }}
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -139,6 +127,19 @@ export default function Navbar() {
         @media (max-width: 860px) {
           .desktop-nav { display: none !important; }
           .mobile-toggle { display: block !important; }
+        }
+        .nav-logo {
+          height: 300px;
+          margin-top: -120px;
+          margin-bottom: -120px;
+          transition: height 0.3s ease;
+        }
+        @media (max-width: 768px) {
+          .nav-logo {
+            height: 200px;
+            margin-top: -70px;
+            margin-bottom: -70px;
+          }
         }
       `}</style>
         </header>

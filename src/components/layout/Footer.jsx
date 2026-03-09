@@ -8,25 +8,13 @@ export default function Footer() {
 
                 {/* Brand & Mission */}
                 <div>
-                    <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: 'var(--space-4)' }}>
-                        <div style={{
-                            width: '32px', height: '32px',
-                            background: 'var(--color-green)',
-                            borderRadius: '8px',
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            color: 'white'
-                        }}>
-                            <MessageCircle size={18} weight="fill" />
-                        </div>
-                        <span style={{
-                            fontFamily: 'var(--font-display)',
-                            fontWeight: 800,
-                            fontSize: '1.25rem',
-                            color: 'white',
-                            letterSpacing: '-0.02em'
-                        }}>
-                            WA<span style={{ color: 'var(--color-green-light)' }}>Africa</span>
-                        </span>
+                    <Link to="/" style={{ display: 'block', marginLeft: '-3rem', marginTop: '-2rem', marginBottom: '-2rem' }}>
+                        <img
+                            src="/waafrica_logo_transparent.png"
+                            alt="WhatsAppAutomation.africa Logo"
+                            className="footer-logo"
+                            style={{ width: 'auto', objectFit: 'contain' }}
+                        />
                     </Link>
                     <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9375rem', marginBottom: 'var(--space-6)' }}>
                         We help East African SMEs turn WhatsApp into a structured growth system. Increase conversions, reduce workload, and scale effortlessly.
@@ -74,7 +62,7 @@ export default function Footer() {
                         </li>
                         <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.9375rem' }}>
                             <Mail size={18} style={{ color: 'var(--color-green)' }} />
-                            <span>hello@whatsappautomation.africa</span>
+                            <span>sales@perlogy.africa</span>
                         </li>
                         <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.9375rem' }}>
                             <MapPin size={18} style={{ color: 'var(--color-green)' }} />
@@ -93,6 +81,17 @@ export default function Footer() {
                     <Link to="/terms-of-service" style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem' }}>Terms of Service</Link>
                 </div>
             </div>
+            <style>{`
+                .footer-logo {
+                    height: 200px;
+                    transition: height 0.3s ease;
+                }
+                @media (max-width: 768px) {
+                    .footer-logo {
+                        height: 150px;
+                    }
+                }
+            `}</style>
         </footer>
     );
 }

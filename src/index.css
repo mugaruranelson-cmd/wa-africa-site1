@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Nexa Pro';
+  src: url('/fonts/NexaTextPro_Trial_Variable-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa Pro';
+  src: url('/fonts/NexaTextPro_Trial_Variable-Italic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 :root {
   /* Core Brand Colors */
@@ -31,8 +45,8 @@
   --color-blue-bg: #DBEAFE;
 
   /* Typography */
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Nexa Pro', system-ui, -apple-system, sans-serif;
+  --font-display: 'Nexa Pro', system-ui, -apple-system, sans-serif;
 
   /* Spacing System */
   --space-0: 0;
@@ -556,5 +570,17 @@ a {
 
   h1 {
     font-size: 2rem;
+  }
+}
+
+/* Footer Logo Sizing */
+.footer-logo {
+  height: 350px;
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 200px;
   }
 }

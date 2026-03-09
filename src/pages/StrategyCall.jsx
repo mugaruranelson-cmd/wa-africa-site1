@@ -67,7 +67,7 @@ export default function StrategyCall() {
                                 {/* Live Calendly Embed */}
                                 <div style={{ background: 'var(--color-bg-alt)', borderRadius: 'var(--radius-lg)', padding: '1rem', border: '1px solid var(--color-border)', color: 'var(--color-muted)' }}>
                                     <InlineWidget
-                                        url="https://calendly.com/mugaruranelson/30min"
+                                        url="https://calendly.com/nelson-perlogy/30min"
                                         prefill={{
                                             name: formData.name,
                                             customAnswers: {

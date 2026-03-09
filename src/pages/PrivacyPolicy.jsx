@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
                     <section style={{ marginBottom: 'var(--space-12)' }}>
                         <h2 className="text-dark" style={{ fontSize: '1.5rem', marginBottom: 'var(--space-4)', color: 'var(--color-teal-dark)' }}>1. Who We Are</h2>
                         <p>
-                            WhatsAppAutomation.africa is a trading name of Perlogy Technologies LLC LTD, a business registered in Kenya. We provide WhatsApp automation consulting and implementation services for SMEs in East Africa. Our registered address is Nairobi, Kenya. You can contact us at hello@whatsappautomation.africa.
+                            WhatsAppAutomation.africa is a trading name of Perlogy Technologies LLC LTD, a business registered in Kenya. We provide WhatsApp automation consulting and implementation services for SMEs in East Africa. Our registered address is Nairobi, Kenya. You can contact us at sales@perlogy.africa.
                         </p>
                     </section>
 
