@@ -8,6 +8,7 @@ import IndustriesGrid from '../components/home/IndustriesGrid';
 import ImpactNumbers from '../components/home/ImpactNumbers';
 import MiniAuthorityStrip from '../components/home/MiniAuthorityStrip';
 import AuthoritySection from '../components/home/AuthoritySection';
+import CaseStudyPreview from '../components/home/CaseStudyPreview';
 import FinalCTA from '../components/home/FinalCTA';
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
             <MiniAuthorityStrip />
             <ImpactNumbers />
             <AuthoritySection />
+            <CaseStudyPreview />
             <FinalCTA />
         </div>
     );

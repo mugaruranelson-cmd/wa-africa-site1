@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MessageCircle, Linkedin, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Linkedin, Facebook, Twitter, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -20,12 +20,18 @@ export default function Footer() {
                         We help East African SMEs turn WhatsApp into a structured growth system. Increase conversions, reduce workload, and scale effortlessly.
                     </p>
                     <div style={{ display: 'flex', gap: '1rem' }}>
-                        <a href="#" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
+                        <a href="https://www.linkedin.com/company/whatsappautomation-africa" target="_blank" rel="noopener noreferrer" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
                             <Linkedin size={20} />
                         </a>
-                        <a href="#" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
-                            <Mail size={20} />
+                        <a href="https://www.facebook.com/profile.php?id=61586875852383" target="_blank" rel="noopener noreferrer" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
+                            <Facebook size={20} />
                         </a>
+                        <a href="https://x.com/WA_Africa26" target="_blank" rel="noopener noreferrer" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
+                            <Twitter size={20} />
+                        </a>
+                        <Link to="/contact" style={{ color: 'white', opacity: 0.8, transition: 'opacity var(--transition-fast)' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.8}>
+                            <Mail size={20} />
+                        </Link>
                     </div>
                 </div>
 
@@ -62,7 +68,7 @@ export default function Footer() {
                         </li>
                         <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.9375rem' }}>
                             <Mail size={18} style={{ color: 'var(--color-green)' }} />
-                            <span>sales@perlogy.africa</span>
+                            <span>info@perlogy.africa</span>
                         </li>
                         <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.9375rem' }}>
                             <MapPin size={18} style={{ color: 'var(--color-green)' }} />

@@ -16,6 +16,8 @@ import Insurance from './pages/industry/Insurance';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 
+import CaseStudySpeedQueen from './pages/CaseStudySpeedQueen';
+
 // Skeleton components for other routes to test navigation
 const PlaceholderPage = ({ title }) => (
   <div className="section container text-center" style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -46,6 +48,7 @@ function App() {
             <Route path="/contact" element={<StrategyCall />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/case-study/speed-queen-laundromat" element={<CaseStudySpeedQueen />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
