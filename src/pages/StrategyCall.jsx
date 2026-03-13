@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Target, CheckCircle2, Shield, Calendar, Send, Settings, LineChart, MessageSquare } from 'lucide-react';
 import { InlineWidget } from 'react-calendly';
+import SEO from '../components/seo/SEO';
 
 export default function StrategyCall() {
     const [formState, setFormState] = useState('idle'); // idle, submitting, success
@@ -34,6 +35,10 @@ export default function StrategyCall() {
 
     return (
         <div className="strategy-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))', background: 'var(--color-bg)' }}>
+            <SEO 
+                title="Book a Free Strategy Call" 
+                description="Schedule a 30-minute consultation with our WhatsApp automation experts. Let's map out your bottlenecks and design an intelligent system for your SME."
+            />
 
             <div className="container" style={{ maxWidth: '1100px', marginBottom: 'var(--space-16)' }}>
 

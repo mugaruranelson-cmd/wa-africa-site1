@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2, TrendingUp, Briefcase, Download } from 'lucide-react';
+import SEO from '../components/seo/SEO';
 
 export default function CaseStudySpeedQueen() {
     useEffect(() => {
@@ -9,6 +10,10 @@ export default function CaseStudySpeedQueen() {
 
     return (
         <div style={{ background: 'var(--color-bg)', minHeight: '100vh', paddingBottom: 'var(--space-16)' }}>
+            <SEO 
+                title="Speed Queen Laundromat Case Study | WATI Automation" 
+                description="Learn how Speed Queen Laundromat in Nairobi achieved 100% positive Google reviews and 30% revenue growth with WhatsApp automation."
+            />
 
             {/* Header Area */}
             <div style={{ background: 'var(--color-ink)', color: 'var(--color-bg)', paddingTop: 'var(--space-16)', paddingBottom: 'var(--space-16)' }}>

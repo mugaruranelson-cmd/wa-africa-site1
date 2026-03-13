@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Stethoscope, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function Clinics() {
     useEffect(() => {
@@ -24,6 +25,10 @@ export default function Clinics() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for Clinics & Healthcare" 
+                description="Reduce missed appointments and automate patient communication for your medical practice in East Africa with WATI."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function Ecommerce() {
     useEffect(() => {
@@ -27,6 +28,10 @@ export default function Ecommerce() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for E-Commerce & Retail" 
+                description="Turn WhatsApp into your highest-converting sales channel. Automate order updates, cart recovery, and stock inquiries."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Building2, Stethoscope, Truck, ShoppingBag, GraduationCap, Shield, ArrowRight, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/seo/SEO';
 
 export default function Industries() {
     useEffect(() => {
@@ -96,6 +97,10 @@ export default function Industries() {
 
     return (
         <div className="industries-page" style={{ background: '#FAFCFF', minHeight: '100vh', paddingBottom: 'var(--space-24)' }}>
+            <SEO 
+                title="Industry-Specific WhatsApp Automation Solutions" 
+                description="Tailored WhatsApp automation for Real Estate, Healthcare, Logistics, E-commerce, Education, and Insurance in East Africa."
+            />
 
             <section className="section" style={{
                 paddingTop: 'calc(var(--space-32) + var(--space-8))',

@@ -10,6 +10,7 @@ import MiniAuthorityStrip from '../components/home/MiniAuthorityStrip';
 import AuthoritySection from '../components/home/AuthoritySection';
 import CaseStudyPreview from '../components/home/CaseStudyPreview';
 import FinalCTA from '../components/home/FinalCTA';
+import SEO from '../components/seo/SEO';
 
 export default function Home() {
     // Simple scroll to top on mount
@@ -19,6 +20,10 @@ export default function Home() {
 
     return (
         <div className="home-page" style={{ paddingTop: 0 }}>
+            <SEO 
+                title="WhatsApp Automation Agency for East African SMEs" 
+                description="Transform your customer experience with intelligent, reliable WATI WhatsApp automation tailored for Kenya, Uganda, Tanzania, and Rwanda."
+            />
             {/* We are overriding the default App.jsx padding behavior here if needed */}
             <HeroSection />
             <TrustStrip />

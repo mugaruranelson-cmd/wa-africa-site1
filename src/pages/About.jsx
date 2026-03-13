@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Target, Search, Settings, ArrowUpRight, CheckCircle2, Award, Briefcase, GraduationCap } from 'lucide-react';
+import SEO from '../components/seo/SEO';
 
 export default function About() {
     useEffect(() => {
@@ -23,6 +24,10 @@ export default function About() {
 
     return (
         <div className="about-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="About Us"
+                description="We blend human strategy with advanced AI-driven WhatsApp automation. Learn how our East African roots power scalable automation systems for SMEs."
+            />
 
             {/* Hero */}
             <section className="section" style={{

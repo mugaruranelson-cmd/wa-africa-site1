@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { GraduationCap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function Education() {
     useEffect(() => {
@@ -27,6 +28,10 @@ export default function Education() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for Schools & Education" 
+                description="Automate admissions, fee queries, and parent communication for your educational institution in East Africa."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

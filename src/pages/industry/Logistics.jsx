@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Truck, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function Logistics() {
     useEffect(() => {
@@ -27,6 +28,10 @@ export default function Logistics() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for Logistics & Courier" 
+                description="Automate delivery tracking, COD confirmations, and customer updates for your logistics business."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

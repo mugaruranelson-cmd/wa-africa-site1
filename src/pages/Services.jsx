@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Settings, UserPlus, Headset, Megaphone, Activity, ArrowRight, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/seo/SEO';
 
 export default function Services() {
     useEffect(() => {
@@ -64,6 +65,10 @@ export default function Services() {
 
     return (
         <div className="services-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WATI WhatsApp Automation Services" 
+                description="From API onboarding to complex lead conversion funnels and automated customer support. We build the systems your East African SME needs to grow."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

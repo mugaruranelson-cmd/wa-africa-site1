@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, Info, ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from '../components/seo/SEO';
 
 export default function Pricing() {
     useEffect(() => {
@@ -70,6 +71,10 @@ export default function Pricing() {
 
     return (
         <div className="pricing-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="Pricing & Packages" 
+                description="Simple, structured pricing for premium WhatsApp automation implementation. Explore our Starter, Growth, and Advanced packages for your business."
+            />
 
             {/* Hero */}
             <section className="section" style={{ textAlign: 'center', background: 'linear-gradient(180deg, var(--color-bg-alt) 0%, white 100%)', paddingBottom: 'var(--space-16)' }}>

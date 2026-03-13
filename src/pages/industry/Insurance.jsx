@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Shield, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function Insurance() {
     useEffect(() => {
@@ -26,6 +27,10 @@ export default function Insurance() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for Insurance & Microfinance" 
+                description="Automate policy queries, lead qualification, and renewal follow-ups for your East African financial firm."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{

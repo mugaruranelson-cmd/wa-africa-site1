@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Building2, MessageCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/seo/SEO';
 
 export default function RealEstate() {
     useEffect(() => {
@@ -19,6 +20,10 @@ export default function RealEstate() {
 
     return (
         <div className="industry-page" style={{ paddingTop: 'calc(var(--space-24) + var(--space-8))' }}>
+            <SEO 
+                title="WhatsApp Automation for Real Estate" 
+                description="Turn property inquiries into qualified buyers automatically. Let our systems handle FAQs, brochures, and viewing bookings."
+            />
 
             {/* Hero Section */}
             <section className="section" style={{
