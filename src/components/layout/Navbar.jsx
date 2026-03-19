@@ -25,6 +25,7 @@ export default function Navbar() {
         { name: 'Industries', path: '/industries' },
         { name: 'Pricing', path: '/pricing' },
         { name: 'About', path: '/about' },
+        { name: 'Blog', path: '/blog' },
     ];
 
     return (

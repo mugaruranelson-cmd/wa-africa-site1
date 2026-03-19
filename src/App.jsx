@@ -17,6 +17,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 
 import CaseStudySpeedQueen from './pages/CaseStudySpeedQueen';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 // Skeleton components for other routes to test navigation
 const PlaceholderPage = ({ title }) => (
@@ -49,6 +51,8 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/case-study/speed-queen-laundromat" element={<CaseStudySpeedQueen />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
