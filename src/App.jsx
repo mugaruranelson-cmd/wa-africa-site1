@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
+import WhatsAppButton from './components/common/WhatsAppButton';
 import Industries from './pages/Industries';
 import Pricing from './pages/Pricing';
 import About from './pages/About';
@@ -57,6 +58,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );
