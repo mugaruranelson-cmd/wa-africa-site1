@@ -78,19 +78,23 @@ export default function Pricing() {
             />
 
             {/* Hero */}
-            <section className="section" style={{ textAlign: 'center', background: 'linear-gradient(180deg, var(--color-bg-alt) 0%, white 100%)', paddingBottom: 'var(--space-16)' }}>
-                <div className="container" style={{ maxWidth: '800px', marginBottom: 'var(--space-12)' }}>
+            <section className="section" style={{ 
+                textAlign: 'center', 
+                background: 'linear-gradient(180deg, var(--color-bg-alt) 0%, white 100%)', 
+                paddingBottom: 'var(--space-16)',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                {/* Dynamic Waves Background */}
+                <DynamicWaves isBackground={true} />
+
+                <div className="container" style={{ maxWidth: '800px', marginBottom: 'var(--space-12)', position: 'relative', zIndex: 1 }}>
                     <h1 className="text-dark animate-slide-up" style={{ marginBottom: 'var(--space-6)' }}>
                         Simple, Structured Pricing
                     </h1>
                     <p className="text-muted animate-slide-up delay-100" style={{ fontSize: '1.25rem', marginBottom: 'var(--space-8)' }}>
                         We provide professional implementation and strategic architecture—not just software setup.
                     </p>
-                </div>
-
-                {/* Dynamic Waves Animation */}
-                <div className="container animate-slide-up delay-200" style={{ maxWidth: '1000px' }}>
-                    <DynamicWaves />
                 </div>
             </section>
 

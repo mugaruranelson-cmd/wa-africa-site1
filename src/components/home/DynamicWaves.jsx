@@ -1,16 +1,34 @@
 import React from 'react';
 
-const DynamicWaves = () => {
+const DynamicWaves = ({ isBackground = false }) => {
+  const containerStyle = isBackground ? {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    overflow: 'hidden',
+    background: 'transparent',
+    zIndex: 0,
+    pointerEvents: 'none',
+  } : {
+    position: 'relative',
+    width: '100%',
+    height: '300px',
+    overflow: 'hidden',
+    background: 'transparent',
+    marginTop: 'var(--space-8)',
+    borderRadius: 'var(--radius-xl)',
+  };
+
+  const svgStyle = {
+    width: '100%',
+    height: '100%',
+    opacity: isBackground ? 0.4 : 1,
+  };
+
   return (
-    <div className="dynamic-waves-container" style={{
-      position: 'relative',
-      width: '100%',
-      height: '300px',
-      overflow: 'hidden',
-      background: 'transparent',
-      marginTop: 'var(--space-8)',
-      borderRadius: 'var(--radius-xl)',
-    }}>
+    <div className="dynamic-waves-container" style={containerStyle}>
       <svg
         className="waves"
         xmlns="http://www.w3.org/2000/svg"
@@ -18,10 +36,7 @@ const DynamicWaves = () => {
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
         shapeRendering="auto"
-        style={{
-          width: '100%',
-          height: '100%',
-        }}
+        style={svgStyle}
       >
         <defs>
           <path
@@ -61,27 +76,29 @@ const DynamicWaves = () => {
         </g>
       </svg>
 
-      {/* Visual Accents for "Fast & Dynamic" */}
-      <div style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
-        zIndex: 10,
-        pointerEvents: 'none'
-      }}>
+      {/* Visual Accents for "Fast & Dynamic" - Only show if not background or subtle if it is */}
+      {!isBackground && (
         <div style={{
-          fontSize: '3rem',
-          fontWeight: 900,
-          color: 'var(--color-ink)',
-          opacity: 0.1,
-          letterSpacing: '0.2em',
-          textTransform: 'uppercase'
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          textAlign: 'center',
+          zIndex: 10,
+          pointerEvents: 'none'
         }}>
-          Agile Automation
+          <div style={{
+            fontSize: '3rem',
+            fontWeight: 900,
+            color: 'var(--color-ink)',
+            opacity: 0.1,
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase'
+          }}>
+            Agile Automation
+          </div>
         </div>
-      </div>
+      )}
 
       <style>{`
         .parallax > use {
@@ -97,7 +114,7 @@ const DynamicWaves = () => {
         }
         @media (max-width: 768px) {
           .dynamic-waves-container {
-            height: 150px;
+            height: ${isBackground ? '100%' : '150px'};
           }
         }
       `}</style>
