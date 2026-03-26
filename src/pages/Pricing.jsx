@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, Info, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '../components/seo/SEO';
+import DynamicWaves from '../components/home/DynamicWaves';
 
 export default function Pricing() {
     useEffect(() => {
@@ -87,17 +88,9 @@ export default function Pricing() {
                     </p>
                 </div>
 
-                {/* Dashboard Illustration */}
+                {/* Dynamic Waves Animation */}
                 <div className="container animate-slide-up delay-200" style={{ maxWidth: '1000px' }}>
-                    <div style={{
-                        borderRadius: 'var(--radius-xl)',
-                        overflow: 'hidden',
-                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0,0,0,0.05)',
-                        background: 'white',
-                        aspectRatio: '16/9', // to prevent reflow if image loads slow, though the generated image is square-ish. Let's not restrict aspect ratio too strictly if it looks bad. Actually, removing aspect ratio is safer to naturally fit the generated img.
-                    }}>
-                        <img src="/pricing-saas-dashboard.png" alt="WhatsApp Automation Analytics Dashboard" style={{ width: '100%', display: 'block', objectFit: 'contain' }} />
-                    </div>
+                    <DynamicWaves />
                 </div>
             </section>
 
